@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PipoliFit</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <link href="index.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">PipoliFit - Vida & Saúde</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Modalidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Seja um aluno</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Colaborador/trabalheConosco.html">Trabalhe conosco</a>
+              </li>
+            </ul>
+            <div>
+              <a type="button" class="btn btn-outline-light" href="Entrar/entrar.html">Colaborador</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="active"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" height="100%" src="Images/Banner1.png" aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            </img>
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Nossos planos são magníficos.</h1>
+                <p>Valor compatível com seu bolso, temos vários planos, veja qual mais se encaixa com você.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img class="bd-placeholder-img" height="100%" src="Images/Banner2.png" aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            </img>
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Seja um de nossos alunos.</h1>
+                <p>Venha fazer parte da nossa gama de alunos, aproveite ao máximo todos os benefícios, físicos e
+                  psicossociais, que nossa academia oferece.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" height="100%" src="Images/Banner3.png" aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            </img>
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Aproveite a nossa estrutura.</h1>
+                <p>Desfrute de nossa infraestrutura, equipamentos top de linha e equipes especializadas.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container">
+        <div class="container marketing">
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="Images/Plano1.png" role="img"
+                aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+              </img>
+  
+              <h2 class="fw-normal">Cobre</h2>
+              <p>Acesso <b>limitado</b> às dependências da academia. Incluindo banheiros equipados com chuveiros e
+                wi-fi gratuito. Contém treinos personalizados, personal trainer e avaliações físicas a cada semestre
+                por cortesia. *Armários exclusivos são cobrados à parte.</p>
+              <p><a class="btn btn-info" href="#">Saiba mais</a></p>
+            </div>
+            <div class="col-lg-4">
+              <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="Images/Plano2.png" role="img"
+                aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+              </img>
+  
+              <h2 class="fw-normal">Prata</h2>
+              <p>Acesso <b>ilimitado</b> às dependências da academia. Incluindo cozinha, banheiros equipados com
+                chuveiros e armários exclusivos, além de wi-fi gratuito. Contém treinos personalizados, personal
+                trainer e avaliações físicas a cada trimestre por cortesia.</p>
+              <p><a class="btn btn-info" href="#">Saiba mais</a></p>
+            </div>
+            <div class="col-lg-4">
+              <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="Images/Plano3.png" role="img"
+                aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+              </img>
+  
+              <h2 class="fw-normal">Ouro</h2>
+              <p>Acesso <b>ilimitado</b> a todas as dependências da academia, inclusive ao espaço de coworking, wi-fi
+                gratuito, banheiros equipados com chuveiros e armários exclusivos. Além de treinos personalizados,
+                personal trainer e avaliações físicas mensais por cortesia.</p>
+              <p><a class="btn btn-info" href="#">Saiba mais</a></p>
+            </div>
+          </div>
+  
+          <hr class="featurette-divider">
+  
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">Matricule-se e ganhe a sua <span class="text-muted">avaliação
+                  física grátis.</span></h2>
+              <p class="lead">Nossos planos têm uma avaliação física inclusa a cada 3 meses com um de nossos
+                professores. O resultado é garantido!</p>
+            </div>
+            <div class="col-md-5">
+              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" src="Images/Card1.png" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+              </img>
+            </div>
+          </div>
+  
+          <hr class="featurette-divider">
+  
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Contamos com equipamentos de <span class="text-muted">última
+                  geração.</span></h2>
+              <p class="lead">Venha conhecer nossos equipamentos, temos esteiras da linha Confort, que tem o poder de
+                diminuir o impacto no seu exercício.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" src="Images/Card2.png" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+              </img>
+            </div>
+          </div>
+  
+          <hr class="featurette-divider">
+  
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">Acompanhamento de professores <span
+                  class="text-muted">especializados.</span></h2>
+              <p class="lead">Contamos com profissionais qualificados, que analisam seu perfil e montam uma carga de
+                treino de acordo com suas metas e desejos.</p>
+            </div>
+            <div class="col-md-5">
+              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" src="Images/Card3.png" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+              </img>
+            </div>
+          </div>
+  
+          <hr class="featurette-divider">
+        </div>
+  
+        <footer class="container">
+          <p class="float-end"><a href="#">Voltar ao início</a></p>
+          <p>&copy; 2022 PipoliFit, Ltda. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+      </div>
+    </main>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
